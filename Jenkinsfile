@@ -13,6 +13,7 @@ pipeline {
             steps {
                 build 'PES1UG22CS554-1'
                 sh 'g++ main/hello.cpp -o output'
+		intentional_error_line
             }
         }
         stage('Test') {
